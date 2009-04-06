@@ -1,38 +1,18 @@
 package Algorithm::Graphs::TransitiveClosure;
 
-################################################################################
-#
-# $Author: abigail $
-#
-# $Date: 1999/03/01 19:51:11 $
-#
-# $Id: TransitiveClosure.pm,v 1.3 1999/03/01 19:51:11 abigail Exp abigail $
-#
-# $Log: TransitiveClosure.pm,v $
-# Revision 1.3  1999/03/01 19:51:11  abigail
-# Renamed primary namespace to Algorithm::
-#
-# Revision 1.2  1998/03/23 04:00:37  abigail
-# Fixed order of loop variables in the ARRAYREF case.
-# It's k, i, j, not i, j, k.
-#
-# Revision 1.1  1998/03/22 06:54:42  abigail
-# Initial revision
-#
-#
-#
-################################################################################
+use 5.006;
 
 use strict;
-use vars qw /$VERSION @ISA @EXPORT @EXPORT_OK/;
+use warnings;
+no  warnings 'syntax';
 
-use Exporter;
+use Exporter ();
 
-@ISA       = qw /Exporter/;
-@EXPORT    = qw //;
-@EXPORT_OK = qw /floyd_warshall/;
+our @ISA       = qw /Exporter/;
+our @EXPORT    = qw //;
+our @EXPORT_OK = qw /floyd_warshall/;
 
-($VERSION) = '$Revision: 1.3 $' =~ /(\d+\.\d+)/;
+our $VERSION   = '2009040601';
 
 
 sub floyd_warshall ($) {
@@ -208,48 +188,34 @@ I<Journal of the ACM>, 9(1):11-12, B<1962>.
 
 =back
 
-=head1 HISTORY
-
-    $Date: 1999/03/01 19:51:11 $
-
-    $Log: TransitiveClosure.pm,v $
-    Revision 1.3  1999/03/01 19:51:11  abigail
-    Renamed primary namespace to Algorithm::
-
-    Revision 1.2  1998/03/23 04:00:37  abigail
-    Fixed order of loop variables in the ARRAYREF case.
-    It's k, i, j, not i, j, k.
-
-    Revision 1.1  1998/03/22 06:54:42  abigail
-    Initial revision
-
-
+=head1 DEVELOPMENT
+ 
+The current sources of this module are found on github,
+L<< git://github.com/Abigail/test--regexp.git >>.
 
 =head1 AUTHOR
+    
+Abigail L<< mailto:algorithm-graphs-transitiveclosure@abigail.be >>.
 
-This package was written by Abigail.
+=head1 COPYRIGHT and LICENSE
 
-=head1 COPYRIGHT
+Copyright (C) 1998, 2009 by Abigail
 
-Copyright 1998 by Abigail.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-=head1 LICENSE
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-This package is free and open software.
-
-You may use, copy, modify, distribute and sell this package or any
-modifications there of in any form you wish, provided you do not do any
-of the following:
-
-    - claim that any of the original code was written by someone
-      else than the original author(s).
-    - restrict someone in using, copying, modifying, distributing or
-      selling this program or module or any modifications of it.
-
-
-THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
-WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
-MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-
-=cut
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 

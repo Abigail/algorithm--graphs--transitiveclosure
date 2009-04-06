@@ -3,5 +3,5 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     'NAME'	=> 'Algorithm::Graphs::TransitiveClosure',
-    'VERSION_FROM' => 'TransitiveClosure.pm', # finds $VERSION
+    'VERSION_FROM' => 'lib/Algorithm/Graphs/TransitiveClosure.pm', # finds $VERSION
 );

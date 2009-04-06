@@ -1,5 +1,6 @@
 Changes
+README
 Makefile.PL
 MANIFEST
-test.pl
-TransitiveClosure.pm
+t/000_tests.t
+lib/Algorithm/Graphs/TransitiveClosure.pm
