@@ -1,14 +1,17 @@
-package Algorithms::Graphs::TransitiveClosure;
+package Algorithm::Graphs::TransitiveClosure;
 
 ################################################################################
 #
 # $Author: abigail $
 #
-# $Date: 1998/03/23 04:00:37 $
+# $Date: 1999/03/01 19:51:11 $
 #
-# $Id: TransitiveClosure.pm,v 1.2 1998/03/23 04:00:37 abigail Exp abigail $
+# $Id: TransitiveClosure.pm,v 1.3 1999/03/01 19:51:11 abigail Exp abigail $
 #
 # $Log: TransitiveClosure.pm,v $
+# Revision 1.3  1999/03/01 19:51:11  abigail
+# Renamed primary namespace to Algorithm::
+#
 # Revision 1.2  1998/03/23 04:00:37  abigail
 # Fixed order of loop variables in the ARRAYREF case.
 # It's k, i, j, not i, j, k.
@@ -29,7 +32,7 @@ use Exporter;
 @EXPORT    = qw //;
 @EXPORT_OK = qw /floyd_warshall/;
 
-($VERSION) = '$Revision: 1.2 $' =~ /(\d+\.\d+)/;
+($VERSION) = '$Revision: 1.3 $' =~ /(\d+\.\d+)/;
 
 
 sub floyd_warshall ($) {
@@ -207,9 +210,12 @@ I<Journal of the ACM>, 9(1):11-12, B<1962>.
 
 =head1 HISTORY
 
-    $Date: 1998/03/23 04:00:37 $
+    $Date: 1999/03/01 19:51:11 $
 
     $Log: TransitiveClosure.pm,v $
+    Revision 1.3  1999/03/01 19:51:11  abigail
+    Renamed primary namespace to Algorithm::
+
     Revision 1.2  1998/03/23 04:00:37  abigail
     Fixed order of loop variables in the ARRAYREF case.
     It's k, i, j, not i, j, k.
@@ -227,8 +233,23 @@ This package was written by Abigail.
 
 Copyright 1998 by Abigail.
 
-You may use, distribute and modify this package under the same
-terms as Perl.
+=head1 LICENSE
+
+This package is free and open software.
+
+You may use, copy, modify, distribute and sell this package or any
+modifications there of in any form you wish, provided you do not do any
+of the following:
+
+    - claim that any of the original code was written by someone
+      else than the original author(s).
+    - restrict someone in using, copying, modifying, distributing or
+      selling this program or module or any modifications of it.
+
+
+THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 =cut
 

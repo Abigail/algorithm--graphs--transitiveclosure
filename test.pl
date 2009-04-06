@@ -8,7 +8,7 @@
 
 BEGIN { $| = 1; print "1..3\n"; }
 END {print "not ok 1\n" unless $loaded;}
-use Algorithms::Graphs::TransitiveClosure qw /floyd_warshall/;
+use Algorithm::Graphs::TransitiveClosure qw /floyd_warshall/;
 $loaded = 1;
 print "ok 1\n";
 
