@@ -1,3 +1,6 @@
+Version 2009040901
+- Fix documentation issue (sinan.unur@gmail.com/RT #14870)
+----
 Version 2009040601
 - Moved to git and github.
 - Modernization

@@ -12,7 +12,7 @@ our @ISA       = qw /Exporter/;
 our @EXPORT    = qw //;
 our @EXPORT_OK = qw /floyd_warshall/;
 
-our $VERSION   = '2009040601';
+our $VERSION   = '2009040901';
 
 
 sub floyd_warshall ($) {
@@ -52,11 +52,11 @@ __END__
 
 =head1 NAME
 
-Algorithms::Graphs::TransitiveClosure - Calculate the transitive closure.
+Algorithm::Graphs::TransitiveClosure - Calculate the transitive closure.
 
 =head1 SYNOPSIS
 
-    use Algorithms::Graphs::TransitiveClosure qw /floyd_warshall/;
+    use Algorithm::Graphs::TransitiveClosure qw /floyd_warshall/;
 
     my $graph = [[1, 0, 0, 0], [0, 1, 1, 1], [0, 1, 1, 0], [1, 0, 1, 1]];
     floyd_warshall $graph;
