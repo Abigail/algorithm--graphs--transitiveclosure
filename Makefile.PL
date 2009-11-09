@@ -39,7 +39,7 @@ my %args = (
             'strict'             => 0,
             'warnings'           => 0,
             'Test::More'         => 0,
-            'Test::NoWarnings'   => 0,
+        #   'Test::NoWarnings'   => 0,
         },
         resources        => {
             repository   => $REPOSITORY,
