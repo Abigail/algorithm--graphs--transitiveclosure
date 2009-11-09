@@ -12,7 +12,7 @@ our @ISA       = qw /Exporter/;
 our @EXPORT    = qw //;
 our @EXPORT_OK = qw /floyd_warshall/;
 
-our $VERSION   = '2009040901';
+our $VERSION   = '2009110901';
 
 
 sub floyd_warshall ($) {
